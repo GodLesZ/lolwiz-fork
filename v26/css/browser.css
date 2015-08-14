@@ -1,0 +1,192 @@
+
+#browser {
+	position: absolute;
+	width: 1090px;
+	height: 690px;
+	padding: 0;
+	margin: 0;
+	background-color: rgba(0,0,0,0);
+	-webkit-user-select: none;
+}
+.appBorder {
+	width: 1080px;
+	height: 697px;
+}
+.appBox {
+	width: 1068px;
+	height: 685px;
+	padding: 47px 10px 10px 10px;
+	background: rgba(20,20,20,1);
+}
+
+#browser iframe {
+	width: 1048px;
+	height: 627px;
+	margin: 0;
+	border-top: 1px solid #1D1D1D;
+	border-left: 1px solid #1D1D1D;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	overflow-x: hidden;
+	-webkit-border-radius: 0 0 0 6px;
+	z-index: 40;
+	pointer-events: auto;
+	display: none;
+}
+
+.appBrowserDragTop {
+	position: absolute;
+	top: 6px;
+	left: 0;
+	width: 1080px;
+	height: 674px; /* 47px + 627px */
+	pointer-events: auto;
+	cursor: move;
+	z-index: 50;
+	color: rgba(102,102,102,1);
+	padding-left: 18px;
+	padding-top: 10px;
+	overflow: hidden;
+}
+.appBrowserDragTop > div {
+	float: left;
+}
+.appBrowserDragTop .searchInput {
+	background-position: 6px center;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	font-size: 14px;
+	width: 770px;
+	height: 30px;
+	padding-left: 11px;
+	-webkit-border-radius: 2px;
+	background-color: #000000;
+	color: rgba(255,170,50,1);
+	border: 1px solid rgba(0,172,255,0.4);
+	pointer-events: auto;
+	margin-left: 16px;
+}
+.appBrowserDragTop .searchInput::-webkit-input-placeholder {
+	font-size: 14px;
+	color: rgba(255,170,50,0.5);
+}
+.appBrowserDragTop .itemGo {
+	margin-left: 12px;
+	width: 24px;
+	height: 30px;
+	opacity: 0.6;
+	cursor: pointer;
+}
+.appBrowserDragTop .itemAddBookmark {
+	margin-left: 6px;
+}
+.appBrowserDragTop .itemAddBookmark input {
+	background: -webkit-linear-gradient(top, rgba(200,123,0,1) 0%,rgba(172,99,0,1) 100%);
+	border: 1px solid rgba(255,170,50,1);
+	color: #FFFFFF;
+	text-transform: uppercase;
+	pointer-events: auto;
+	cursor: pointer;
+	-webkit-border-radius: 2px;
+	font-size: 16px;
+	height: 30px;
+	width: 139px;
+	cursor: pointer;
+}
+.appBrowserDragTop .itemAddBookmark input:hover {
+	background: -webkit-linear-gradient(top, rgba(172,99,0,1) 0%,rgba(200,123,0,1) 100%);
+}
+.appBrowserDragTop .itemShowBookmark {
+	margin-left: 2px;
+	width: 24px;
+	height: 30px;
+	opacity: 0.6;
+	cursor: pointer;
+}
+.appBrowserDragTop .itemDelete {
+	margin-left: 3px;
+	width: 16px;
+	height: 16px;
+	opacity: 0.6;
+	cursor: pointer;
+	display: none;
+	z-index: 999;
+	vertical-align: middle;
+	margin-top: -3px;
+}
+
+.appBrowserDragTop .itemGo:hover, .appBrowserDragTop .itemAddBookmark:hover, .appBrowserDragTop .itemShowBookmark:hover, .appBrowserDragTop .itemDelete:hover {
+	opacity: 1;
+}
+.appBrowserDragTop .itemUrl.hover .itemDelete {
+	display: inline-block;
+}
+.appBrowserDragLeft {
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 10px;
+	height: 668px;
+	pointer-events: auto;
+	cursor: move;
+	z-index: 50;
+}
+.appBrowserDragRight {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	width: 10px;
+	height: 668px;
+	pointer-events: auto;
+	cursor: move;
+	z-index: 50;
+}
+.appBrowserDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 1080px;
+	height: 10px;
+	pointer-events: auto;
+	cursor: move;
+	z-index: 50;
+}
+.appClose {
+	left: 1055px;
+}
+
+.appSponsoredBookmarks, .appUserBookmarks {
+	width: 1014px;
+	margin-left: 15px;
+}
+.appSponsoredBookmarks .headline, .appUserBookmarks .headline {
+    margin-top: 19px;
+	color: rgba(0,165,255,1);
+	font-size: 20px;
+}
+.itemUrl {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 16px 16px;
+    height: 30px;
+    width: 1045px;
+    padding-left: 23px;
+    line-height: 29px;
+	z-index: 888;
+}
+.itemUrlLink {
+	color: rgba(102,102,102,1);
+    line-height: 29px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.itemUrlLink:hover {
+	color: rgba(204,204,204,1);
+}
+.userlinks {
+	height: 380px;
+	overflow-x: hidden;
+}
+.sponsoredlinks {
+	font-size: 20px;
+}

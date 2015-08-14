@@ -1,0 +1,144 @@
+#main {
+	position: absolute;
+	top: -90px;
+	width: 171px;
+	height: 122px;
+	padding: 0;
+	margin: 0 5px 5px 5px;
+	background-color: rgba(0,0,0,0);
+	-webkit-user-select: none;
+}
+.appBorder {
+	width: 50%;
+	height: 107px;
+	padding: 3px;
+	margin: 0 auto;
+}
+.appBox {
+	width: 100%;
+	height: 100px;
+	opacity: 0.3;
+}
+.itemLogo {
+	margin: 15px auto;
+}
+
+.appItem {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	opacity: 0.6;
+	cursor: pointer;
+}
+.itemStats:hover, .itemBookmarks:hover, .itemHelp:hover, .itemConfig:hover {
+	opacity: 1;
+	-webkit-filter: drop-shadow(0 0 4px rgba(0,172,255,0.85));
+}
+.itemDisabled {
+	opacity: 0.2;
+	cursor: default;
+}
+.itemDisabled:hover {
+	opacity: 0.2;
+	-webkit-filter: drop-shadow(0 0 4px rgba(0,172,255,0));
+}
+.itemStats {
+	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/button_stats_20x20.png');
+	left: 23px;
+	display: none;
+}
+.itemBookmarks {
+	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/button_bookmarks_20x20.png');
+	left: 33px;
+}
+.itemHelp {
+	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/button_help_20x20.png');
+	left: 75px;
+}
+.itemConfig {
+	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/button_config_20x20.png');
+	left: 116px;
+}
+
+.appKey {
+	margin-top: 200px;
+}
+.appKey .appBorder  {
+	opacity: 1;
+	width: 450px;
+	height: 100%;
+}
+
+.appKey .appBox  {
+	height: 100%;
+	opacity: 1;
+}
+.appConfigSummonername input {
+	/* float: left; */
+	font-size: 14px;
+	width: 350px;
+	height: 30px;
+	padding-left: 10px;
+	-webkit-border-radius: 2px;
+	background-color: #000000;
+	color: rgba(255,170,50,1);
+	border: 1px solid rgba(0,172,255,0.4);
+	pointer-events: auto;
+}
+.appConfigButton input {
+	width: 130px;
+	height: 30px;
+	color: #FFFFFF;
+	border: 1px solid rgba(0,145,214,1);
+	background: -webkit-linear-gradient(top, rgba(0,127,184,1) 0%,rgba(0,103,157,1) 100%);
+	text-transform: uppercase;
+	pointer-events: auto;
+	cursor: pointer;
+	-webkit-border-radius: 2px;
+	font-size: 16px;
+}
+.appConfigButton input:hover {
+	background: -webkit-linear-gradient(top, rgba(0,103,157,1) 0%,rgba(0,127,184,1) 100%);
+}
+.appConfigSummonername input::-webkit-input-placeholder {
+	font-size: 14px;
+	color: rgba(255,170,50,0.5);
+}
+.appIntroText, .appConfigSummonername, .appConfigButton, .appConfigMessage {
+	text-align: center;
+	color: rgba(0,165,255,1);
+}
+.appIntroText {
+	padding-left: 58px;
+	padding-right: 58px;
+}
+.appConfigSummonername {
+	margin-top: 12px;
+}
+.appConfigButton {
+	margin-top: 16px;
+	margin-bottom: 20px;
+}
+.appConfigMessage {
+	display: none;
+	margin-bottom: 20px;
+}
+.itemErrorIcon {
+	display: inline-block;
+}
+.itemErrorMessage {
+	display: inline-block;
+}
+.appKey .appClose {
+	position: relative;
+	left: 424px;
+	top: 2px;
+}
+.appKey a {
+	text-decoration: none;
+	color: rgba(255,170,50,1);
+}

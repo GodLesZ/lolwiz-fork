@@ -1,0 +1,115 @@
+
+#config {
+	position: absolute;
+	width: 182px;
+	height: 282px;
+	padding: 0;
+	margin: 5px;
+	background-color: rgba(0,0,0,0);
+	-webkit-user-select: none;
+}
+.appBorder {
+	width: 172px;
+	padding: 6px 5px 6px 5px;
+}
+.appBox {
+	width: 160px;
+	cursor: move;
+}
+.itemLogo {
+	margin: 15px auto 23px;
+}
+.appClose {
+	top: 9px;
+}
+.selectboxit-container {
+	pointer-events: auto;
+}
+.selectboxit-container .selectboxit {
+	width: 130px;
+	-webkit-border-radius: 2px;
+	background-color: #000000;
+	color: rgba(255,170,50,1);
+	border: 1px solid rgba(0,172,255,0.4);
+}
+.selectboxit-btn.selectboxit-enabled:hover,
+.selectboxit-btn.selectboxit-enabled:focus,
+.selectboxit-btn.selectboxit-enabled:active {
+	color: rgba(255,170,50,1);
+}
+. selectboxit-btn {
+	background-color: #000000;
+}
+.selectboxit-container .selectboxit-options a, .selectboxit-container .selectboxit-options a span {
+	height: 20px;
+	line-height: 20px;
+	display: block;
+}
+.appConfigText, .appConfigMessage, .appConfigButton, .appConfigRegion, .appConfigSummonername {
+	pointer-events: none;
+	position: relative;
+}
+.appConfigMessage {
+	font-size: 14px;
+	line-height: 14px;
+	padding-left: 13px;
+	padding-right: 13px;
+	padding-bottom: 8px;
+	display: none;
+}
+.appConfigRegion, .appConfigSummonername {
+	color: #FFFFFF;
+	padding-left: 13px;
+	min-height: 40px;
+}
+.appConfigButton {
+	color: #FFFFFF;
+	padding-left: 13px;
+	min-height: 45px;
+}
+.appConfigSummonername input {
+	float: left;
+	font-size: 14px;
+	width: 130px;
+	height: 30px;
+	padding-left: 10px;
+	-webkit-border-radius: 2px;
+	background-color: #000000;
+	color: rgba(255,170,50,1);
+	border: 1px solid rgba(0,172,255,0.4);
+	pointer-events: auto;
+}
+.appConfigButton input {
+	width: 130px;
+	height: 30px;
+	color: #FFFFFF;
+	border: 1px solid rgba(0,145,214,1);
+	background: -webkit-linear-gradient(top, rgba(0,127,184,1) 0%,rgba(0,103,157,1) 100%);
+	text-transform: uppercase;
+	pointer-events: auto;
+	cursor: pointer;
+	-webkit-border-radius: 2px;
+	font-size: 16px;
+}
+.appConfigButton input:hover {
+	background: -webkit-linear-gradient(top, rgba(0,103,157,1) 0%,rgba(0,127,184,1) 100%);
+}
+.appConfigSummonername input::-webkit-input-placeholder {
+	font-size: 14px;
+	color: rgba(255,170,50,0.5);
+}
+.itemErrorIcon {
+	position: relative;
+	float: left;
+	color: rgba(0,172,255,1);
+	margin-right: 5px;
+}
+.itemErrorMessage {
+	margin-left: 23px;
+	margin-Right: 7px;
+	color: rgba(0,172,255,1);
+	font-size: 13px;
+}
+.selectboxit-text {
+	width: 97px;
+}
