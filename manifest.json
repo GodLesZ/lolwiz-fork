@@ -3,11 +3,11 @@
     "type": "WebApp",
     "meta": {
         "name": "LoLwiz",
-        "version": "2.6.2",
+        "version": "2.6.3",
         "minimum-overwolf-version": "0.81.36.0",
-        "author": "MobaBeast",
-        "icon": "IconMouseOver.png",
-        "icon_gray": "IconMouseNormal.png",
+        "author": "MobaBeast, forked by GodLesZ",
+        "icon": "images/IconMouseOver.png",
+        "icon_gray": "images/IconMouseNormal.png",
         "description": "DOMINATE your opponents with LoLwiz for League of Legends."
     },
     "permissions": ["Hotkeys","GameInfo"],
