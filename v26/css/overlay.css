@@ -1,631 +1,742 @@
 html {
-	width: 100%;
-	height: 100%;
+    width:  100%;
+    height: 100%;
 }
+
 #overlay {
-	width: 100%;
-	height: 100%;
-	padding: 0;
-	margin: 0;
-	-webkit-user-select: none;
+    width:               100%;
+    height:              100%;
+    padding:             0;
+    margin:              0;
+    -webkit-user-select: none;
 }
+
 .appStatWindow {
-	position: relative;
-	float: left;
-	top: 50%;
-	left: 50%;
-	width: 1328px;
-	-webkit-transform: translate(-50%,-50%);
-	display: none;
+    position:          relative;
+    float:             left;
+    top:               50%;
+    left:              50%;
+    width:             1328px;
+    -webkit-transform: translate(-50%, -50%);
+    display:           none;
 }
+
 .appStatWindow .appBorder {
-	width: 1342px;
-	padding: 6px 5px 6px 5px;
+    width:   1342px;
+    padding: 6px 5px 6px 5px;
 }
+
 .appStatWindow .appBox {
-	width: 1330px;
-	height: 500px;
-	cursor: default;
+    width:  1330px;
+    height: 500px;
+    cursor: default;
 }
+
 .appStatWindow .appClose {
-	left: 1317px;
-	z-index: 9999;
+    left:    1317px;
+    z-index: 9999;
 }
+
 .appStatWindow .appReload {
-	left: 1299px;
-	z-index: 9998;
-	/* opacity: 0.6; */
+    left:    1299px;
+    z-index: 9998;
+    /* opacity: 0.6; */
 }
+
 .appStatNotification .appConfig {
-	left: 257px;
-	z-index: 9998;
-	opacity: 0.6;
+    left:    257px;
+    z-index: 9998;
+    opacity: 0.6;
 }
+
 .appStatNotification .appHelp {
-	left: 239px;
-	z-index: 9998;
-	opacity: 0.6;
+    left:    239px;
+    z-index: 9998;
+    opacity: 0.6;
 }
+
 .appStatNotification .appBookmarks {
-	left: 259px;
-	z-index: 9998;
-	/* opacity: 0.6; */
+    left:    259px;
+    z-index: 9998;
+    /* opacity: 0.6; */
 }
+
 .appStatNotification .appStats {
-	left: 199px;
-	z-index: 9998;
-	opacity: 0.6;
+    left:    199px;
+    z-index: 9998;
+    opacity: 0.6;
 }
+
 .appStatWindow .appConfig {
-	left: 1281px;
-	z-index: 9998;
-	opacity: 0.6;
+    left:    1281px;
+    z-index: 9998;
+    opacity: 0.6;
 }
+
 .appStatWindow .appHelp {
-	left: 1262px;
-	z-index: 9998;
-	opacity: 0.6;
+    left:    1262px;
+    z-index: 9998;
+    opacity: 0.6;
 }
+
 .appStatWindow .appBookmarks {
-	left: 1281px;
-	z-index: 9998;
-	/* opacity: 0.6; */
+    left:    1281px;
+    z-index: 9998;
+    /* opacity: 0.6; */
 }
+
 .appStatWindow .appStats {
-	left: 1222px;
-	z-index: 9998;
-	opacity: 0.6;
+    left:    1222px;
+    z-index: 9998;
+    opacity: 0.6;
 }
+
 .appStatLoading .appConfig {
-	left: 225px;
-	z-index: 9998;
-	opacity: 0.6;
+    left:    225px;
+    z-index: 9998;
+    opacity: 0.6;
 }
+
 .appStatLoading .appHelp {
-	left: 207px;
-	z-index: 9998;
-	opacity: 0.6;
+    left:    207px;
+    z-index: 9998;
+    opacity: 0.6;
 }
+
 .appStatLoading .appBookmarks {
-	left: 229px;
-	z-index: 9998;
-	/* opacity: 0.6; */
+    left:    229px;
+    z-index: 9998;
+    /* opacity: 0.6; */
 }
+
 .appStatLoading .appStats {
-	left: 167px;
-	z-index: 9998;
-	opacity: 0.6;
+    left:    167px;
+    z-index: 9998;
+    opacity: 0.6;
 }
+
 .appStatWindow .appReload:hover, .appConfig:hover, .appHelp:hover, .appBookmarks:hover, .appStats:hover {
-	opacity: 1;
+    opacity: 1;
 }
+
 .appStatWindow .extendedstats {
-	width: 30px;
-	height: 30px;
-	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/lolking-logo-tall.png');
-	background-position: center center;
-	background-size: 30px 30px;
-	margin: 10px auto 0;
-	opacity: 0.6;
+    width:               30px;
+    height:              30px;
+    background-image:    url('http://appscdn.overwolf.com/LoLWiz/images/lolking-logo-tall.png');
+    background-position: center center;
+    background-size:     30px 30px;
+    margin:              10px auto 0;
+    opacity:             0.6;
 }
+
 .appStatNotification {
-	position: relative;
-	left: 5px;
-	top: 85px;
-	width: 302px;
-	height: 112px;
-	display: none;
+    position: relative;
+    left:     5px;
+    top:      85px;
+    width:    302px;
+    height:   112px;
+    display:  none;
 }
+
 .appStatNotification .appBorder {
-	width: 302px;
-	height: 112px;
+    width:  302px;
+    height: 112px;
 }
+
 .appStatNotification .appBox {
-	width: 290px;
-	height: 100px;
-	cursor: default;
+    width:  290px;
+    height: 100px;
+    cursor: default;
 }
+
 .appStatNotification .appClose {
-	left: 277px;
+    left: 277px;
 }
+
 .appStatsNotifyText {
-	font-size: 16px;
-	color: rgba(0,172,255,1);
-	margin-left: 19px;
+    font-size:   16px;
+    color:       rgba(0, 172, 255, 1);
+    margin-left: 19px;
 }
+
 .appStatsNotifyText > span:first-child {
-	margin-right: 5px;
+    margin-right: 5px;
 }
+
 .appStatsNotifyText > span:last-child {
-	margin-left: 5px;
+    margin-left: 5px;
 }
+
 .appStatNotification .itemLogo {
-	margin: 20px 20px 13px;
+    margin: 20px 20px 13px;
 }
 
 .appStatLoading {
-	position: relative;
-	left: 5px;
-	top: 85px;
-	width: 272px;
-	height: 347px;
-	/* display: none; */
+    position: relative;
+    left:     5px;
+    top:      85px;
+    width:    272px;
+    height:   347px;
+    /* display: none; */
 }
+
 .appStatLoading .appBorder {
-	width: 272px;
-	height: 347px;
+    width:  272px;
+    height: 347px;
 }
+
 .appStatLoading .appBox {
-	width: 260px;
-	height: 335px;
-	cursor: default;
+    width:  260px;
+    height: 335px;
+    cursor: default;
 }
+
 .appStatLoading .appClose {
-	left: 247px;
+    left: 247px;
 }
+
 .appStatLoading .itemLogo {
-	margin: 30px auto 28px;
+    margin: 30px auto 28px;
 }
+
 .appStatsLoadingText {
-	color: rgba(0,165,255,1);
-	width: 100%;
-	text-align: center;
-	font-style: italic;
+    color:      rgba(0, 165, 255, 1);
+    width:      100%;
+    text-align: center;
+    font-style: italic;
 }
+
 .appStatsLoadingProgress {
-	margin-top: 5px;
-	width: 100%;
-	margin-bottom: 12px;
+    margin-top:    5px;
+    width:         100%;
+    margin-bottom: 12px;
 }
+
 .appStatsProgressBar {
-	width: 150px;
-	margin: 0 auto;
-	height: 5px;
-	background-color: rgba(0,165,255,0.2);
+    width:            150px;
+    margin:           0 auto;
+    height:           5px;
+    background-color: rgba(0, 165, 255, 0.2);
 }
+
 .progressBaseActive {
-	width: 0%;
-	height: 5px;
-	background-color: rgba(255,170,50,1);
-	display: inline-block;
-	-webkit-filter: drop-shadow(0 0 3px rgba(255,170,50,1));
+    width:            0%;
+    height:           5px;
+    background-color: rgba(255, 170, 50, 1);
+    display:          inline-block;
+    -webkit-filter:   drop-shadow(0 0 3px rgba(255, 170, 50, 1));
 }
+
 .appStatsLoadingProgressWrapper {
-	padding-top: 20px;
-	min-height: 145px;
-	display: none;
+    padding-top: 20px;
+    min-height:  145px;
+    display:     none;
 }
+
 .appStatsLoadingHint {
-	width: 200px;
-	height: 52px;
-	margin: 0 auto;
-	font-style: italic;
-	color: rgba(153,153,153,0.6);
-	line-height: 18px;
+    width:       200px;
+    height:      52px;
+    margin:      0 auto;
+    font-style:  italic;
+    color:       rgba(153, 153, 153, 0.6);
+    line-height: 18px;
 }
+
 .appStatsLoadingErrorWrapper {
-	min-height: 165px;
-	display: none;
+    min-height: 165px;
+    display:    none;
 }
+
 .appStatsLoadingErrorHeadline {
-	width: 200px;
-	margin: 0 auto;
-	color: rgba(0,165,255,1);
-	font-size: 15px;
+    width:     200px;
+    margin:    0 auto;
+    color:     rgba(0, 165, 255, 1);
+    font-size: 15px;
 }
+
 .appStatsLoadingErrorText {
-	width: 200px;
-	margin: 0 auto;
-	color: rgba(153,153,153,0.6);
-	font-size: 13px;
-	line-height: 15px;
-	padding-top: 5px;
-	min-height: 80px;
+    width:       200px;
+    margin:      0 auto;
+    color:       rgba(153, 153, 153, 0.6);
+    font-size:   13px;
+    line-height: 15px;
+    padding-top: 5px;
+    min-height:  80px;
 }
+
 .appStatsLoadingErrorButtons {
-	height: 30px;
-	width: 225px;
-	margin: 0 auto;
-	text-align: center;
+    height:     30px;
+    width:      225px;
+    margin:     0 auto;
+    text-align: center;
 }
+
 .appStatsLoadingErrorButtons input {
-	background: -webkit-linear-gradient(top, rgba(0,127,184,1) 0%,rgba(0,103,157,1) 100%);
-	border: 1px solid rgba(0,145,214,1);
-	color: #FFFFFF;
-	text-transform: uppercase;
-	pointer-events: auto;
-	cursor: pointer;
-	-webkit-border-radius: 2px;
-	font-size: 16px;
-	height: 30px;
-	width: 110px;
+    background:            -webkit-linear-gradient(top, rgba(0, 127, 184, 1) 0%, rgba(0, 103, 157, 1) 100%);
+    border:                1px solid rgba(0, 145, 214, 1);
+    color:                 #ffffff;
+    text-transform:        uppercase;
+    pointer-events:        auto;
+    cursor:                pointer;
+    -webkit-border-radius: 2px;
+    font-size:             16px;
+    height:                30px;
+    width:                 110px;
 }
+
 .appStatsLoadingErrorButtons input:hover {
-	background: -webkit-linear-gradient(top, rgba(0,103,157,1) 0%,rgba(0,127,184,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 103, 157, 1) 0%, rgba(0, 127, 184, 1) 100%);
 }
+
 .appStatsLoadingErrorButtons input:first-child {
-	margin-right: 5px;
+    margin-right: 5px;
 }
+
 #statsShow {
-	background: -webkit-linear-gradient(top, rgba(200,123,0,1) 0%,rgba(172,99,0,1) 100%);
-	border: 1px solid rgba(255,170,50,1);
+    background: -webkit-linear-gradient(top, rgba(200, 123, 0, 1) 0%, rgba(172, 99, 0, 1) 100%);
+    border:     1px solid rgba(255, 170, 50, 1);
 }
-#statsShow: {
-	background: -webkit-linear-gradient(top, rgba(172,99,0,1 0%,rgba(200,123,0,1)) 100%);
-}
+
 a {
-	color: rgba(153,153,153,1);
-	text-decoration: none;
+    color:           rgba(153, 153, 153, 1);
+    text-decoration: none;
 }
 
 .appStatWindow .appBox {
-	background: rgba(20,20,20,1);
-/*	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 10%, rgba(20,20,20,1) 50%, rgba(0,0,0,1) 90%); */
+    background: rgba(20, 20, 20, 1);
+    /*	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 10%, rgba(20,20,20,1) 50%, rgba(0,0,0,1) 90%); */
 }
+
 .appSummonersTop, .appSummonersBottom {
-	padding: 31px 15px 0;
-	text-align: center;
-	position: absolute;
-	width: 100%;
+    padding:    31px 15px 0;
+    text-align: center;
+    position:   absolute;
+    width:      100%;
 }
+
 .appSummonersTop {
-	top: 6px;
-	z-index: 110;
+    top:     6px;
+    z-index: 110;
 }
+
 .appSummonersBottom {
-	top: 276px;
-	z-index: 100;
+    top:     276px;
+    z-index: 100;
 }
+
 .appSummoner {
-	display: inline-block;
-	position: relative;
-	text-align: left;
-	width: 256px;
-	margin-left: -4px;
-	vertical-align: top;
+    display:        inline-block;
+    position:       relative;
+    text-align:     left;
+    width:          256px;
+    margin-left:    -4px;
+    vertical-align: top;
 }
+
 .appSummoner.hideIt {
-	display: none;
+    display: none;
 }
+
 .appSummonersBottom .appSummonerHover, .appSummonersTop .appSummonerHover {
-/*	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 90%); */
-	background: -webkit-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(10,10,10,1) 15%, rgba(10,10,10,1) 100%);
-	padding-bottom: 10px;
+    /*	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 10%, rgba(0,0,0,1) 90%); */
+    background:     -webkit-linear-gradient(top, rgba(20, 20, 20, 1) 0%, rgba(10, 10, 10, 1) 15%, rgba(10, 10, 10, 1) 100%);
+    padding-bottom: 10px;
 }
+
 .appSummonersTop .appSummonerHover {
-/*	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 10%, rgba(0,0,0,0.8) 90%, rgba(0,0,0,1) 100%);*/
-	background: -webkit-linear-gradient(top, rgba(20,20,20,1) 0%, rgba(10,10,10,1) 15%, rgba(10,10,10,1) 100%);
-	padding-bottom: 10px;
+    /*	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 10%, rgba(0,0,0,0.8) 90%, rgba(0,0,0,1) 100%);*/
+    background:     -webkit-linear-gradient(top, rgba(20, 20, 20, 1) 0%, rgba(10, 10, 10, 1) 15%, rgba(10, 10, 10, 1) 100%);
+    padding-bottom: 10px;
 }
+
 .appSummonersBottom .appSummoner, .appSummonersTop .appSummoner {
-	border-bottom: 1px solid rgba(0,0,0,0);
-	-webkit-border-radius: 0 0 5px 5px;
+    border-bottom:         1px solid rgba(0, 0, 0, 0);
+    -webkit-border-radius: 0 0 5px 5px;
 }
+
 .appSummonersTop .appSummoner.appSummonerHover {
-	border-bottom: 1px solid rgba(0,165,255,1);
-	-webkit-border-radius: 0 0 5px 5px;
+    border-bottom:         1px solid rgba(0, 165, 255, 1);
+    -webkit-border-radius: 0 0 5px 5px;
 }
+
 .appSummonersBottom .appSummoner.appSummonerHover {
-	border-bottom: 1px solid rgba(255,170,50,1);
-	-webkit-border-radius: 0 0 5px 5px;
+    border-bottom:         1px solid rgba(255, 170, 50, 1);
+    -webkit-border-radius: 0 0 5px 5px;
 }
+
 .appSummoner:before, .appSummoner:after {
-	content: "";
-	position: absolute;
-	top: 0px;
-	bottom: 3px;
-	width: 1px;
+    content:  "";
+    position: absolute;
+    top:      0px;
+    bottom:   3px;
+    width:    1px;
 }
+
 .appSummoner:before {
-	left: 0;
+    left: 0;
 }
+
 .appSummoner:after {
-	right: 0;
+    right: 0;
 }
+
 .appSummonersTop .appSummoner:after {
-	background-image: -webkit-linear-gradient(rgba(0,0,0,1), rgba(0, 165, 255, 0) 0%, rgba(0, 165, 255, 0.6) 16%, rgba(0, 165, 255, 0.8) 36%, rgba(0, 165, 255, 1) 50%, rgba(0, 165, 255, 0.8) 61%, rgba(0, 165, 255, 0.6) 81%, rgba(0, 165, 255, 0) 100%);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 165, 255, 0) 0%, rgba(0, 165, 255, 0.6) 16%, rgba(0, 165, 255, 0.8) 36%, rgba(0, 165, 255, 1) 50%, rgba(0, 165, 255, 0.8) 61%, rgba(0, 165, 255, 0.6) 81%, rgba(0, 165, 255, 0) 100%);
 }
+
 .appSummonersBottom .appSummoner:after {
-	background-image: -webkit-linear-gradient(rgba(0,0,0,1), rgba(255, 172, 28, 0) 0%, rgba(255, 172, 28, 0.6) 16%, rgba(255, 172, 28, 0.8) 36%, rgba(255, 172, 28, 1) 50%, rgba(255, 172, 28, 0.8) 61%, rgba(255, 172, 28, 0.6) 81%, rgba(255, 172, 28, 0) 100%);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 1), rgba(255, 172, 28, 0) 0%, rgba(255, 172, 28, 0.6) 16%, rgba(255, 172, 28, 0.8) 36%, rgba(255, 172, 28, 1) 50%, rgba(255, 172, 28, 0.8) 61%, rgba(255, 172, 28, 0.6) 81%, rgba(255, 172, 28, 0) 100%);
 }
+
 .appSummoner:first-child:before {
-	background-image: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
 }
+
 .appSummoner:last-child:after {
-	background-image: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
 }
+
 .appSummonersTop .appSummoner.appSummonerHover:before, .appSummonersTop .appSummoner.appSummonerHover:after {
-	background-image: -webkit-linear-gradient(rgba(0,0,0,1), rgba(0, 165, 255, 0) 0%, rgba(0, 165, 255, 0.6) 16%, rgba(0, 165, 255, 0.8) 36%, rgba(0, 165, 255, 1) 50%);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 165, 255, 0) 0%, rgba(0, 165, 255, 0.6) 16%, rgba(0, 165, 255, 0.8) 36%, rgba(0, 165, 255, 1) 50%);
 }
+
 .appSummonersBottom .appSummoner.appSummonerHover:before, .appSummonersBottom .appSummoner.appSummonerHover:after {
-	background-image: -webkit-linear-gradient(rgba(0,0,0,1), rgba(255, 172, 28, 0) 0%, rgba(255, 172, 28, 0.6) 16%, rgba(255, 172, 28, 0.8) 36%, rgba(255, 172, 28, 1) 50%);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 1), rgba(255, 172, 28, 0) 0%, rgba(255, 172, 28, 0.6) 16%, rgba(255, 172, 28, 0.8) 36%, rgba(255, 172, 28, 1) 50%);
 }
+
 .appSummonerHover {
-	z-index: 999;
+    z-index: 999;
 }
+
 .left {
-	float: left;
-	padding-left: 15px;
-	text-align: center;
-	width: 69px;
-	min-height: 165px;
+    float:        left;
+    padding-left: 15px;
+    text-align:   center;
+    width:        69px;
+    min-height:   165px;
 }
+
 .champion {
-	background-image: url('http://ddragon.leagueoflegends.com/cdn/4.21.5/img/champion/Annie.png');
-	background-repeat: no-repeat;
-	background-size: 58px 58px;
-	background-position: center center;
-	width: 48px;
-	height: 48px;
-	border: 1px solid #FFFFFF;
-	-webkit-border-radius: 3px;
-	-webkit-filter: drop-shadow(0 0 2px rgba(255,255,255,1));
-	margin: 0 auto;
+    background-image:      url('http://ddragon.leagueoflegends.com/cdn/4.21.5/img/champion/Annie.png');
+    background-repeat:     no-repeat;
+    background-size:       58px 58px;
+    background-position:   center center;
+    width:                 48px;
+    height:                48px;
+    border:                1px solid #ffffff;
+    -webkit-border-radius: 3px;
+    -webkit-filter:        drop-shadow(0 0 2px rgba(255, 255, 255, 1));
+    margin:                0 auto;
 }
+
 .appSummonersBottom .champion {
-	border: 1px solid rgba(255,170,50,1);
-	-webkit-filter: drop-shadow(0 0 2px rgba(255,170,50,1));
+    border:         1px solid rgba(255, 170, 50, 1);
+    -webkit-filter: drop-shadow(0 0 2px rgba(255, 170, 50, 1));
 }
+
 .tier {
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 48px 48px;
-	width: 48px;
-	height: 48px;
-	margin: 6px auto 0px;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    background-size:     48px 48px;
+    width:               48px;
+    height:              48px;
+    margin:              6px auto 0px;
 }
+
 .challenger {
-	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/tier_191x191/challenger.png');
+    background-image: url('../../images/tier_191x191/challenger.png');
 }
+
 .master {
-	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/tier_191x191/master.png');
+    background-image: url('../../images/tier_191x191/master.png');
 }
+
 .diamond {
-	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/tier_191x191/diamond.png');
+    background-image: url('../../images/tier_191x191/diamond.png');
 }
+
 .platinum {
-	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/tier_191x191/platinium.png');
+    background-image: url('../../images/tier_191x191/platinium.png');
 }
+
 .gold {
-	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/tier_191x191/gold.png');
+    background-image: url('../../images/tier_191x191/gold.png');
 }
+
 .silver {
-	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/tier_191x191/silver.png');
+    background-image: url('../../images/tier_191x191/silver.png');
 }
+
 .bronze {
-	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/tier_191x191/bronze.png');
+    background-image: url('../../images/tier_191x191/bronze.png');
 }
+
 .unranked {
-	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/tier_191x191/unranked.png');
+    background-image: url('../../images/tier_191x191/unranked.png');
 }
+
 .division {
-	width: 21px;
-	height: 21px;
-	background-color: rgba(0,0,0,0.6);
-	margin: 0 auto;
-	border: 1px solid rgba(204,204,204,0.8);
-	-webkit-border-radius: 11px;
-	box-shadow: 0 0 7px rgba(255,170,50,0.6);
-	text-align: center;
-	color: rgba(204,204,204,1);
-	top: 24px;
-	position: relative;
-	font-size: 13px;
-	line-height: 19px;
-	text-transform: uppercase;
+    width:                 21px;
+    height:                21px;
+    background-color:      rgba(0, 0, 0, 0.6);
+    margin:                0 auto;
+    border:                1px solid rgba(204, 204, 204, 0.8);
+    -webkit-border-radius: 11px;
+    box-shadow:            0 0 7px rgba(255, 170, 50, 0.6);
+    text-align:            center;
+    color:                 rgba(204, 204, 204, 1);
+    top:                   24px;
+    position:              relative;
+    font-size:             13px;
+    line-height:           19px;
+    text-transform:        uppercase;
 }
+
 .tiername {
-	color: rgba(102,102,102,1);
-	font-size: 11px;
-	text-transform: capitalize;
+    color:          rgba(102, 102, 102, 1);
+    font-size:      11px;
+    text-transform: capitalize;
 }
+
 .right {
-	float: right;
-	padding-right: 20px;
-	width: 174px;
-	min-height: 165px;
+    float:         right;
+    padding-right: 20px;
+    width:         174px;
+    min-height:    165px;
 }
+
 .summonername {
-	font-size: 15px;
-	font-weight: 700;
-	color: rgba(0,165,255,1);
-	margin-bottom: 13px;
-	line-height: 14px;
+    font-size:     15px;
+    font-weight:   700;
+    color:         rgba(0, 165, 255, 1);
+    margin-bottom: 13px;
+    line-height:   14px;
 }
 
 .kda, .wins, .masteries, .roles, .nostats {
-	font-size: 12px;
-	color: rgba(0,165,255,0.6);
-	line-height: 8px;
-	height: 13px;
+    font-size:   12px;
+    color:       rgba(0, 165, 255, 0.6);
+    line-height: 8px;
+    height:      13px;
 }
+
 .kda > div, .wins > div, .masteries > div, .roles > div, .nostats > div {
-	display: inline-block;
-	margin-right: 1px;
+    display:      inline-block;
+    margin-right: 1px;
 }
+
 .champtionname {
-	font-size: 10px;
-	color: rgba(0,165,255,0.6);
-	margin-top: 2px;
+    font-size:  10px;
+    color:      rgba(0, 165, 255, 0.6);
+    margin-top: 2px;
 }
+
 .right span {
-	font-size: 6px;
-	color: rgba(0,165,255,1);
-	top: -2px;
-	display: inline-block;
-	position: relative;
+    font-size: 6px;
+    color:     rgba(0, 165, 255, 1);
+    top:       -2px;
+    display:   inline-block;
+    position:  relative;
 }
+
 .appSummonersBottom .summonername {
-	color: rgba(255,170,50,1);
+    color: rgba(255, 170, 50, 1);
 }
+
 .appSummonersBottom .kda, .appSummonersBottom .wins, .appSummonersBottom .champtionname, .appSummonersBottom .roles, .appSummonersBottom .nostats {
-	color: rgba(255,170,50,0.6);
+    color: rgba(255, 170, 50, 0.6);
 }
+
 .appSummonersBottom .right span {
-	color: rgba(255,170,50,1);
+    color: rgba(255, 170, 50, 1);
 }
+
 .masteries {
-	color: rgba(255,255,255,0.6);
-	margin-top: 7px;
-	margin-bottom: 5px;
+    color:         rgba(255, 255, 255, 0.6);
+    margin-top:    7px;
+    margin-bottom: 5px;
 }
+
 .appSummonersTop .runes span, .appSummonersBottom .runes span {
-	color: rgba(255,255,255,0.6);
-	top: 0;
-	font-size: 12px;
+    color:     rgba(255, 255, 255, 0.6);
+    top:       0;
+    font-size: 12px;
 }
+
 .runes {
-	color: rgba(153,153,153,0.6);
-	font-size: 12px;
-	overflow: hidden;
-	height: 86px;
-	line-height: 14px;
+    color:       rgba(153, 153, 153, 0.6);
+    font-size:   12px;
+    overflow:    hidden;
+    height:      86px;
+    line-height: 14px;
 }
+
 .appSummonerHover .runes {
-	overflow: visible;
-	height: auto;
+    overflow: visible;
+    height:   auto;
 }
+
 .appSummonersTop .right .masteries span, .appSummonersBottom .right .masteries span {
-	color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
+
 .appSummonersTop .champion {
-	border: 1px solid rgba(0,165,255,1);
-	-webkit-filter: drop-shadow(0 0 2px rgba(0,165,255,1));
+    border:         1px solid rgba(0, 165, 255, 1);
+    -webkit-filter: drop-shadow(0 0 2px rgba(0, 165, 255, 1));
 }
 
 .showMore {
-	font-size: 29px;
-	line-height: 0;
-	text-align: center;
-	color: rgba(153,153,153,0.6);
-	float: left;
-	width: 256px;
-	display: none;	
+    font-size:   29px;
+    line-height: 0;
+    text-align:  center;
+    color:       rgba(153, 153, 153, 0.6);
+    float:       left;
+    width:       256px;
+    display:     none;
 }
+
 .appEnableShowMore {
-	display: block;
+    display: block;
 }
+
 .appSummonerHover .showMore {
-	display: none;
+    display: none;
 }
+
 .divider {
-	display: table;
-	margin-top: -2px;
-	width: 100%;
-	position: absolute;
-	top: 224px;
-	z-index: 90;
+    display:    table;
+    margin-top: -2px;
+    width:      100%;
+    position:   absolute;
+    top:        224px;
+    z-index:    90;
 }
+
 .divider-tr {
     display: table-row;
 }
+
 .divider-tr > div {
-    display: table-cell;
-    text-align: center;
+    display:        table-cell;
+    text-align:     center;
     vertical-align: middle;
 }
+
 .multi-border {
-    border-bottom: 1px solid rgba(102,102,102,0.6);
-    border-top: 1px solid rgba(0,0,0,1);
-    display: inline-block;
-    height: 2px;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.6);
+    border-top:    1px solid rgba(0, 0, 0, 1);
+    display:       inline-block;
+    height:        2px;
 }
+
 .div-left .multi-border {
-	width: 365px;
+    width: 365px;
 }
+
 .div-right .multi-border {
-	width: 365px;
+    width: 365px;
 }
+
 .itemLogoCloud9 {
-	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/logo_cloud9_173x27.png');
-	background-position: center left;
-	background-size: 173px 27px;
-	width: 193px;
-	height: 27px;
-	opacity: 0.7;
-	z-index: 800;
+    background:      url('../../images/logo_cloud9_173x27.png') center left;
+    background-size: 173px 27px;
+    width:           193px;
+    height:          27px;
+    opacity:         0.7;
+    z-index:         800;
 }
+
 .itemLogoLolskill {
-	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/logo_lolskill_130x27.png');
-	background-position: center right;
-	background-size: 130px 27px;
-	width: 150px;
-	height: 27px;
-	opacity: 0.7;
-	z-index: 800;
+    background:      url('../../images/logo_lolskill_130x27.png') center right;
+    background-size: 130px 27px;
+    width:           150px;
+    height:          27px;
+    opacity:         0.7;
+    z-index:         800;
 }
+
 .itemLogoLolking {
-	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/logo_lolking_130x27.png');
-	background-position: center right;
-	background-size: 130px 27px;
-	width: 150px;
-	height: 27px;
-	opacity: 0.7;
-	z-index: 800;
+    background:      url('../../images/logo_lolking_130x27.png') center right;
+    background-size: 130px 27px;
+    width:           150px;
+    height:          27px;
+    opacity:         0.7;
+    z-index:         800;
 }
+
 .appStatWindow .itemLogo {
-	background-size: 100px 27px;
-	height: 69px;
-	background-position: center 18px;
-	vertical-align: bottom;
-	color: rgba(0,165,255,1);
+    background-size:     100px 27px;
+    height:              69px;
+    background-position: center 18px;
+    vertical-align:      bottom;
+    color:               rgba(0, 165, 255, 1);
 }
+
 .colorReady {
-	color: #00CC00;
-	margin: 0;
-	padding: 0;
+    color:   #00cc00;
+    margin:  0;
+    padding: 0;
 }
+
 .colorError {
-	color: #CC0000;
-	margin: 0;
-	padding: 0;
+    color:   #cc0000;
+    margin:  0;
+    padding: 0;
 }
+
 .appStatWindow .extendedstats.hover, .appStatWindow .itemLogoCloud9.hover, .appStatWindow .itemLogoLolskill.hover, .appStatWindow .itemLogoLolking.hover {
-	opacity: 1;
+    opacity: 1;
 }
+
 div.itemLogoLolskill {
-	color: rgba(102,102,102,1);
-	font-size: 8px;
-	text-align: left;
-	padding-left: 25px;
-	pointer-events: auto;
+    color:          rgba(102, 102, 102, 1);
+    font-size:      8px;
+    text-align:     left;
+    padding-left:   25px;
+    pointer-events: auto;
 }
+
 div.itemLogoLolking {
-	color: rgba(102,102,102,1);
-	font-size: 8px;
-	text-align: left;
-	padding-left: 25px;
-	pointer-events: auto;
+    color:          rgba(102, 102, 102, 1);
+    font-size:      8px;
+    text-align:     left;
+    padding-left:   25px;
+    pointer-events: auto;
 }
+
 div.itemLogoCloud9 {
-	color: rgba(102,102,102,1);
-	font-size: 8px;
-	text-align: left;
-	pointer-events: auto;
+    color:          rgba(102, 102, 102, 1);
+    font-size:      8px;
+    text-align:     left;
+    pointer-events: auto;
 }
+
 .nostats {
-	display: none;
-	height: 40px;
+    display: none;
+    height:  40px;
 }
 
 .seasons {
-	position: absolute;
-	display: inline-block;
-	top: -18px;
-	left: 18px;
-	text-decoration: none;
-	color: rgba(0,165,255,1);
-	font-weight: bold;
-	font-size: 11px;
+    position:        absolute;
+    display:         inline-block;
+    top:             -18px;
+    left:            18px;
+    text-decoration: none;
+    color:           rgba(0, 165, 255, 1);
+    font-weight:     bold;
+    font-size:       11px;
 }
+
 .seasons div {
-	display: inline-block;
-	font-weight: normal;
-	color: rgba(0,165,255,0.6);
+    display:     inline-block;
+    font-weight: normal;
+    color:       rgba(0, 165, 255, 0.6);
 }
+
 .appSummonersBottom .seasons {
-	color: rgba(255,170,50,1);
+    color: rgba(255, 170, 50, 1);
 }
-.appSummonersBottom .seasons div{
-	color: rgba(255,170,50,0.6);
+
+.appSummonersBottom .seasons div {
+    color: rgba(255, 170, 50, 0.6);
 }

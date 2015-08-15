@@ -1,91 +1,105 @@
 
 #help {
-	position: absolute;
-	width: 282px;
-	height: 517px;
-	padding: 0;
-	margin: 5px;
-	background-color: rgba(0,0,0,0);
-	-webkit-user-select: none;
+    position:            absolute;
+    width:               282px;
+    height:              517px;
+    padding:             0;
+    margin:              5px;
+    background-color:    rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
 }
 
 .appBorder {
-	width: 272px;
-}
-.appBox {
-	width: 260px;
-	cursor: move;
-}
-.itemLogo {
-	margin: 15px auto 23px;
+    width: 272px;
 }
 
+.appBox {
+    width:  260px;
+    cursor: move;
+}
+
+.itemLogo {
+    margin: 15px auto 23px;
+}
 
 #help {
-	color: rgba(153,153,153,0.6);
+    color: rgba(153, 153, 153, 0.6);
 }
+
 .highlight {
-	color: rgba(255,170,50,1);
+    color: rgba(255, 170, 50, 1);
 }
+
 #help a {
-	color: rgba(255,255,255,0.6);
-	text-decoration: none;
+    color:           rgba(255, 255, 255, 0.6);
+    text-decoration: none;
 }
+
 #help a {
-	cursor: pointer;
-	pointer-events: auto;
+    cursor:         pointer;
+    pointer-events: auto;
 }
+
 #help a:hover {
-	color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
 }
+
 .appHelpText {
-	z-index: 10;
+    z-index: 10;
 }
+
 .appHelpText, .appHelpTextTop, .appHelpShortcut, .appHelpCredits, .appHelpLinks {
-position: relative;
-color: rgba(0,172,255,1);
-line-height: 16px;
-pointer-events: none;
-font-weight: bold;
-font-size: 15px;
+    position:       relative;
+    color:          rgba(0, 172, 255, 1);
+    line-height:    16px;
+    pointer-events: none;
+    font-weight:    bold;
+    font-size:      15px;
 }
+
 .appHelpText, .appHelpTextTop {
-	padding: 13px 0 6px 13px;
+    padding: 13px 0 6px 13px;
 }
+
 .appHelpShortcut, .appHelpCredits, .appHelpLinks, .appHelpCreditsLolking {
-	position: relative;
-	font-size: 13px;
-	padding-left: 13px;
-	padding-right: 13px;
-	pointer-events: none;
-	color: rgba(153,153,153,0.6);
-	font-weight: normal;
+    position:       relative;
+    font-size:      13px;
+    padding-left:   13px;
+    padding-right:  13px;
+    pointer-events: none;
+    color:          rgba(153, 153, 153, 0.6);
+    font-weight:    normal;
 }
+
 .shortcutShort {
-	width: 25px;
-	float: left;
+    width: 25px;
+    float: left;
 }
+
 .shortcutLong {
-	width: 100px;
-	float: left;
+    width: 100px;
+    float: left;
 }
+
 .appHelpCreditsLolking {
-	font-size: 11px;
+    font-size: 11px;
 }
+
 .appHelpCreditsLolking .appLolkingLogo {
-	width: 99px;
-	height: 18px;
-	background-image: url('http://appscdn.overwolf.com/LoLWiz/images/appLolkingLogo.png');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: 100% 100%;
+    width:           99px;
+    height:          18px;
+    background:      url('../../images/appLolkingLogo.png') no-repeat center center;
+    background-size: 100% 100%;
 }
+
 .appHelpSpacer {
-	height: 10px;
+    height: 10px;
 }
+
 .appClose {
-	left: 247px;
+    left: 247px;
 }
+
 .itemLogo {
-	margin: 30px auto 11px;
+    margin: 30px auto 11px;
 }
